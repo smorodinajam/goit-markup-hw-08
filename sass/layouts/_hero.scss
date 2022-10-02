@@ -1,0 +1,27 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+}
+.hero-main-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.hero-btn {
+  min-width: 216px;
+  padding: 10px 32px;
+  margin: 0 auto;
+}

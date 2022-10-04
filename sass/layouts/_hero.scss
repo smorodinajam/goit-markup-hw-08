@@ -1,21 +1,29 @@
 .hero {
-  /*padding-top: 200px;
-  padding-bottom: 200px;
-  width: 1600px;*/
   padding-top: 118px;
-  padding-bottom: 118px;
-  // width: 100%;
+  padding-bottom: 198px;
+  width: 100%;
+  // width: 1600px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../img/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
-  /*@media screen and (min-width: 768px) {
-    width: 768px;
-  }*/
-  @media screen and (min-width: 1200px) {
+  background-size: cover;
+  background-position: center;
+  @include retina {
+    background-image: var(--bg-gradient), url(../img/hero-bg-mob-2x.jpg);
+  }
+  @include tablet {
+    background-image: var(--bg-gradient), url(../img/hero-bg-tab-1x.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../img/hero-bg-tab-2x.jpg);
+    }
+  }
+  @include desktop {
     padding-top: 200px;
-    padding-bottom: 200px;
-    width: 1600px;
+    padding-bottom: 280px;
+    background-image: var(--bg-gradient), url(../img/hero-bg-desk-1x.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../img/hero-bg-desk-2x.jpg);
+    }
   }
 }
 .hero-main-title {
@@ -30,7 +38,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
@@ -39,7 +47,7 @@
 .hero-btn {
   padding: 10px 24px;
   margin: 0 auto;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     min-width: 216px;
     padding: 10px 32px;
   }

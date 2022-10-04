@@ -7,6 +7,7 @@
   --adv-workarea-color: #f5f5f5;
   --typical-letter-spacing: 0.03em;
   --main-gap: 30px;
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 p,
@@ -555,24 +556,40 @@ body {
 }
 
 .hero {
-  /*padding-top: 200px;
-  padding-bottom: 200px;
-  width: 1600px;*/
   padding-top: 118px;
-  padding-bottom: 118px;
+  padding-bottom: 198px;
+  width: 100%;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../img/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
-  /*@media screen and (min-width: 768px) {
-    width: 768px;
-  }*/
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-tab-2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
-    padding-bottom: 200px;
-    width: 1600px;
+    padding-bottom: 280px;
+    background-image: var(--bg-gradient), url(../img/hero-bg-desk-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-desk-2x.jpg);
   }
 }
 
@@ -664,17 +681,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .workarea {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
-    margin: -1px;
+    display: none;
   }
 }
 

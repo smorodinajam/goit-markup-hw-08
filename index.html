@@ -22,7 +22,7 @@
 
   <body>
     <header class="header section">
-      <div class="container header__container">
+      <!--<div class="container header__container">
         <nav class="navigation header__navigation">
           <a href="./index.html" class="logo header__logo logo--color-dark link" lang="en"
             ><span class="accent-logo">Web</span>Studio</a
@@ -39,7 +39,6 @@
             </li>
           </ul>
         </nav>
-
         <ul class="connection list">
           <li class="connection__item">
             <a href="mailto:info@devstudio.com" class="connection__link link">
@@ -58,8 +57,74 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="mob-menu-icon" width="40" height="40">
+                <use href="./img/icon-menu.svg#icon-open-menu"></use>
+              </svg>
+        </button>
+      </div> -->
+
+      <!-- MENU -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="mob-menu-icon" width="40" height="40">
+                <use href="./img/icon-menu.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-navigation">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-link link active">Студія</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link">Портфоліо</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <ul class="mob-connect list">
+            <li class="mob-connect-item">
+              <a href="mailto:info@devstudio.com" class="mob-connect-link mob-tel link">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-connect-item">
+              <a href="tel:+380961111111" class="mob-connect-link mob-mail link">
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a href="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>-->
+    </header>
 
     <main>
       <!--Hero-->
@@ -189,7 +254,6 @@
                   height="260"
                 />
               </picture>
-
               <div class="team__content">
                 <h3 class="team__title-after">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -250,7 +314,6 @@
                   height="260"
                 />
               </picture>
-
               <div class="team__content">
                 <h3 class="team__title-after">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -286,6 +349,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item">
               <picture>
                 <source

@@ -71,7 +71,6 @@
     fill: var(--accent-color);
   }
 }
-
 .menu-open-btn {
   margin-left: auto;
 }
@@ -82,22 +81,42 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  // @media screen and (max-width: 480px) {
+  // width: 480px;
+  // height: 100vh;
   > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 15px;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
   }
+}
+.mob-menu-top {
+  margin-bottom: 306px;
 }
 .menu-close-btn {
   display: block;
   margin-left: auto;
-}
-.mob-menu-navigation {
-  margin-bottom: 302px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 0px;
+  fill: var(--title-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: #188ce8;
+  }
 }
 .mob-menu-item:not(:last-child) {
   margin-bottom: 32px;
@@ -109,30 +128,65 @@
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
-.mob-tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+.mob-menu-link.active {
+  color: var(--accent-color);
+}
+.mob-menu-item .mob-menu-link:hover {
+  color: var(--title-color)
+}
+//  .menu-close-btn:hover .mob-menu-link {
+//   color: var(--title-color)
+// }
+.mob-connect {
+  margin-bottom: 64px;
+}
+.mob-connect-item:not(:last-child) {
   margin-bottom: 32px;
 }
-.mob-mail {
+.mob-tel {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-bottom: 64px;
+}
+.mob-mail {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 .mob-soc-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  list-style: none;
 }
 .mob-soc-link {
+  // text-decoration: none;
+  // display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
+.mob-soc-item{
+  position: relative;
+}
+.line::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 22px;
+  bottom: 2px;
+  right: -10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+
+

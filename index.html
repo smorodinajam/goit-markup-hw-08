@@ -22,7 +22,7 @@
 
   <body>
     <header class="header section">
-      <!-- <div class="container header__container">
+      <div class="container header__container">
         <nav class="navigation header__navigation">
           <a href="./index.html" class="logo header__logo logo--color-dark link" lang="en"
             ><span class="accent-logo">Web</span>Studio</a
@@ -57,10 +57,17 @@
             >
           </li>
         </ul>
-      </div> -->
 
-      <!-- MOB-header -->
-      <div class="mob-header">
+        <!-- mobile button -->
+        <button type="button" class="header__menu-btn" aria-expanded="false" aria-controls="mob-menu" data-menu-button>
+          <svg class="mob-menu-icon" width="19" height="19">
+            <use href="./img/icon-menu.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile-header -->
+      <!-- <div class="mob-header">
         <div class="container">
           <a href="./index.html" class="logo mob-header-logo link" lang="en"
             ><span class="accent-logo">Web</span>Studio</a
@@ -77,83 +84,83 @@
             </svg>
           </button>
         </div>
-      </div>
+      </div> -->
 
       <!-- MENU -->
       <!-- is-hidden -->
-      <div class="mob-menu" data-menu>
-        <div class="container">
-          <div class="mob-menu-top">
+      <div class="mob-menu " data-menu>
+        <div class="container mob-menu__container">
+          <div class="mob-menu__top">
             <button
               type="button"
-              class="menu-close-btn"
+              class="mob-menu__close-btn"
               aria-expanded="false"
               aria-controls="mob-menu"
               data-menu-button
             >
-              <svg class="mob-menu-icon" width="19" height="19">
+              <svg class="mob-menu__icon" width="19" height="19">
                 <use href="./img/icon-menu.svg#icon-close-menu"></use>
               </svg>
             </button>
-            <nav class="mob-menu-navigation">
-              <ul class="mob-menu-list list">
-                <li class="mob-menu-item">
-                  <a href="./index.html" class="mob-menu-link link active">Студія</a>
+            <nav class="mob-menu__nav">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link link active">Студія</a>
                 </li>
-                <li class="mob-menu-item">
-                  <a href="./portfolio.html" class="mob-menu-link link">Портфоліо</a>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link">Портфоліо</a>
                 </li>
-                <li class="mob-menu-item">
-                  <a href="" class="mob-menu-link link">Контакти</a>
+                <li class="mob-menu__item">
+                  <a href="" class="mob-menu__link link">Контакти</a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <ul class="mob-connect list">
-            <li class="mob-connect-item">
-              <a href="tel:+380961111111" class="mob-connect-link mob-mail link">
+          <ul class="mob-connect__list list">
+            <li class="mob-connect__item">
+              <a href="tel:+380961111111" class="mob-connect__link mob-mail link">
                 +38 096 111 11 11</a
               >
             </li>
-            <li class="mob-connect-item connect-mob-tel">
-              <a href="mailto:info@devstudio.com" class="mob-connect-link mob-tel link">
+            <li class="mob-connect__item connect-mob-tel">
+              <a href="mailto:info@devstudio.com" class="mob-connect__link mob-tel link">
                 info@devstudio.com</a
               >
             </li>
           </ul>
-          <ul class="mob-soc-list">
-            <li class="mob-soc-item">
+          <ul class="mob-soc__list">
+            <li class="mob-soc__item">
               <a
                 href=""
-                class="mob-soc-link line link"
+                class="mob-soc__link line link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Instagram</a
               >
             </li>
-            <li class="mob-soc-item">
+            <li class="mob-soc__item">
               <a
                 href=""
-                class="mob-soc-link line link"
+                class="mob-soc__link line link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Twitter</a
               >
             </li>
-            <li class="mob-soc-item">
+            <li class="mob-soc__item">
               <a
                 href=""
-                class="mob-soc-link line link"
+                class="mob-soc__link line link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Facebook</a
               >
             </li>
-            <li class="mob-soc-item">
+            <li class="mob-soc__item">
               <a
                 href=""
-                class="mob-soc-link link"
+                class="mob-soc__link link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >LinkedIn</a

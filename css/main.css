@@ -250,6 +250,10 @@ body {
   fill: var(--accent-color);
 }
 
+.modal-form {
+  position: relative;
+}
+
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -381,12 +385,10 @@ body {
 }
 
 .field-check {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -402,7 +404,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 5px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: var(--typical-letter-spacing);
   color: var(--primary-text-color);
@@ -422,6 +424,16 @@ body {
 }
 .check-link:hover, .check-link:focus {
   color: #188ce8;
+}
+.check-link::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .check-text span {

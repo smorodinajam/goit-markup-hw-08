@@ -192,13 +192,6 @@
   }
 }
 
-.mob-menu__close-btn.is-open .mob-menu__icon {
-  display: block;
-}
-.header__menu-btn.is-open .header__menu-btn {
-  display: none;
-}
-
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }

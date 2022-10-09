@@ -10,10 +10,7 @@
   gap: var(--main-gap);
 }
 .clients-item {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: calc((100% - 60px) / 3);
-  }
-  @include mobile {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
   }
   @include tablet {

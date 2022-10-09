@@ -1100,12 +1100,7 @@ body {
   gap: var(--main-gap);
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .clients-item {
-    width: calc((100% - 60px) / 3);
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .clients-item {
     width: calc((100% - 30px) / 2);
   }
